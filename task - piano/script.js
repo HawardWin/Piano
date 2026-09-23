@@ -1,3 +1,10 @@
+const express = require('express');
+const server = express();
+server.listen(3000)
+
+server.get('/about' , (req,res)=>{
+  res.send("Piano")
+})
 
 let audio ={
 a : "72.mp3" ,
